@@ -14,3 +14,9 @@ knonw issues:
 
 
 A. Borghi, University of Neuchatel, 2011
+
+
+Leon Foks, Apogee Engineering contracted to USGS, added CMAKE capabilities 10/6/2020
+
+Create a new folder "build" in the repo root folder.  From there run "cmake ../src"
+
