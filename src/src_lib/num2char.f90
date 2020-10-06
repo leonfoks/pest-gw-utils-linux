@@ -152,7 +152,7 @@ end subroutine r2a
 	  END IF
 	  IF(POS.EQ.1) THEN
 	    IF(LW.GE.13) THEN
-	      WRITE(WORD,'(1PE13.7)',ERR=80) VAL
+	      WRITE(WORD,'(1PE14.7)',ERR=80) VAL
 	      GO TO 200
 	    END IF
 	  ELSE
@@ -175,7 +175,7 @@ end subroutine r2a
 !#ifdef USE_D_FORMAT
 !              WRITE(WORD,'(1PD22.15D3)',ERR=80) VAL
 !#else
-	      WRITE(WORD,'(1PE22.15E3)',ERR=80) VAL
+	      WRITE(WORD,'(1PE23.15E3)',ERR=80) VAL
 !#endif
 	      GO TO 200
 	    END IF
