@@ -20,6 +20,7 @@ include(GNUInstallDirs)
 # Setup the Fortran cmake environment
 # Sets up the flags for compiling shared libraries or static libraries, and returns the libType parameter.
 include("${CMAKE_MODULE_PATH}/FortranEnvironment.cmake")
+include("${CMAKE_MODULE_PATH}/sci.cmake")
 
 # Create the library
 # ${PROJECT_NAME} is the name given for the most recent project() call
@@ -28,6 +29,7 @@ add_library(${PROJECT_NAME} "")
 # Add files to the library as sources
 # Each CMakeLists.txt simply uses target_sources to add the source files
 # Lib
+include(src_dep/CMakeLists.txt)
 include(src_lib/CMakeLists.txt)
 
 target_include_directories(${PROJECT_NAME} PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}> # for generated files in build mode
