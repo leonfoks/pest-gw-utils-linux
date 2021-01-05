@@ -20,7 +20,9 @@ include(GNUInstallDirs)
 # Setup the Fortran cmake environment
 # Sets up the flags for compiling shared libraries or static libraries, and returns the libType parameter.
 include("${CMAKE_MODULE_PATH}/FortranEnvironment.cmake")
-include("${CMAKE_MODULE_PATH}/sci.cmake")
+# include("${CMAKE_MODULE_PATH}/blas.cmake")
+# include("${CMAKE_MODULE_PATH}/lapack.cmake")
+include("${CMAKE_MODULE_PATH}/mkl.cmake")
 
 # Create the library
 # ${PROJECT_NAME} is the name given for the most recent project() call
